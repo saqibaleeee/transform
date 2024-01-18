@@ -8,17 +8,74 @@
         *{margin: 0px;
         padding: 0px;}
         .parent{background-color: blueviolet;
-        height: 100vh;display: flex;
+        height: 50vh;display: flex;
         justify-content: center;
         align-items: center;
     }
     .heading{color: black;
     background-color: brown;
-     height: 200px;
+     height: 100px;
      width: 200px;
 text-align: center;
- transform: scale(2);}
-.heading:hover{transform: skew(40deg);}
+ transform: scale(2);
+ transition: 3s ease;}
+.heading:hover{transform: scale(1);
+}
+.parent2{background-color: aqua;
+height: 199vh;display: flex;justify-content: center;
+align-items: center;}
+.heading2{color: black;
+background-color: blue;
+height: 100px;
+width: 200px;
+transform: rotate(1);}
+.heading2:hover{transform: rotate(49deg);
+transition: 3s ease;}
+.parent3{background-color: aqua;
+height: 199vh;display: flex;justify-content: center;
+align-items: center;}
+.heading3{color: black;
+background-color: blue;
+height: 100px;
+width: 200px;
+transform: skew(2);}
+.heading3:hover{transform: skew(69deg);
+transition: 2s ease;}
+.parent3{background-color: aqua;
+height: 100vh;display: flex;justify-content: center;
+align-items: center;}
+.heading3{color: black;
+background-color: blue;
+height: 100px;
+width: 200px;
+transform: skew(2);}
+.heading3:hover{transform: skew(69deg);
+transition: 2s ease;}
+.parent4{background-color: aqua;
+height: 100vh;display: flex;justify-content: center;
+align-items: center;}
+.heading4{color: black;
+background-color: blue;
+height: 100px;
+width: 200px;
+transform: skew(2);}
+.heading4:hover{transform: (69deg);
+transition: 2s ease;}
+.parent-5{
+    background-color: black;
+    color: green;
+    height: 50vh;
+}
+.child4{
+    height: 200px;
+    width: 200px;
+    background-color: gray;
+    /* transform: scale(3); */
+    transition: all 2s ease-in-out;
+}
+.child4:hover h1 {
+    transform: scale(2);
+}
 
         
     </style>
@@ -27,5 +84,19 @@ text-align: center;
    <div class="parent">
     <h1 class="heading">heading</h1>
    </div> 
+   <div class="parent 2">
+    <h1 class="heading2">heading</h1>
+   </div> 
+   <div class="parent 3">
+    <h1 class="heading3">heading</h1>
+   </div> 
+   <!-- <div class="parent 4">
+    <h1 class="heading4">heading</h1>
+   </div>  -->
+   <div class="parent-5">
+    <div class="child4">
+        <h1>this is saaqib developer</h1>
+    </div>
+   </div>
 </body>
 </html>
